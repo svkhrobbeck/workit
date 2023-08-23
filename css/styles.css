@@ -23,6 +23,17 @@
   font-display: swap;
 }
 
+/* CUSTOM PROPS */
+:root {
+  --dark-purple: #24053e;
+  --eucalyptus: #44ffa1;
+  --davis-grey: #584d62;
+  --ghost-white: #fcf8ff;
+
+  --heading-font-family: "Fraunces 144pt", "Times New Roman", serif;
+  --body-font-family: "Manrope", "Arial", sans-serif;
+}
+
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -42,11 +53,11 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  line-height: 32px;
   background-color: #fff;
-  color: #222;
+  color: var(--dark-purple);
 }
 
 img {
