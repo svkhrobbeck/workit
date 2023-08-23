@@ -27,12 +27,15 @@
       <!-- HERO -->
       <section class="hero">
         <div class="hero__container container">
-          <h1 class="hero__heading">Data <span class="underline-text">tailored</span> to your needs.</h1>
+          <h1 class="hero__heading">Data <span class="underline-text">tailored</span> to<br />your needs.</h1>
           <a class="hero__button button" href="#">Learn more</a>
 
-          <picture>
+          <picture class="hero__picture">
+            <source srcset="images/image-hero-mobile.png 1x, images/image-hero-mobile@2x.png 2x" media="(max-width:  500px)" />
+            <source srcset="images/image-hero-tablet.png 1x, images/image-hero-tablet@2x.png 2x" media="(max-width:  768px)" />
             <source srcset="images/image-hero.webp" type="image/webp" />
             <img
+              class="hero__image"
               src="images/image-hero.png"
               alt="Phone with statistics illustration on the sceen"
               width="767"
