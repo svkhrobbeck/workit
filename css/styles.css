@@ -94,6 +94,120 @@ img {
   flex-grow: 1;
 }
 
+/* BUTTON */
+.button {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  color: var(--dark-purple);
+  background-color: var(--eucalyptus);
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+  padding: 11px 25px 14px;
+  border: 2px solid transparent;
+  transition: background-color var(--transition-duration) ease, color var(--transition-duration) ease,
+    border-color var(--transition-duration) ease, opacity var(--transition-duration) ease;
+}
+
+.button:hover {
+  border-color: var(--eucalyptus);
+  background-color: transparent;
+  color: var(--eucalyptus);
+}
+
+.button:active {
+  opacity: 0.6;
+}
+
+/* LOGO */
+.logo {
+  display: block;
+  text-decoration: none;
+  transition: opacity var(--transition-duration) ease;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
+
+.logo__img {
+  width: 97px;
+  height: 26px;
+  display: block;
+}
+
+/* UNDERLINE-LINK */
+.underline-link {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--ghost-white);
+  border-bottom: 3px solid var(--eucalyptus);
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  transition: color var(--transition-duration) ease, opacity var(--transition-duration) ease;
+}
+
+.underline-link:hover {
+  color: var(--eucalyptus);
+}
+
+.underline-link:active {
+  opacity: 0.6;
+}
+
+/* UNDERLINE-TEXT */
+.underline-text {
+  display: inline-block;
+  border-bottom: 3px solid var(--eucalyptus);
+}
+
+/* SITE-HEADER-HERO-WRAPPER */
+.site-header-hero-wrapper {
+  padding-top: 56px;
+  background-color: var(--dark-purple);
+}
+
+/* SITE HEADER */
+.site-header {
+  margin-bottom: 55px;
+}
+
+.site-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* HERO */
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero__heading {
+  max-width: 635px;
+  margin-top: 0;
+  margin-bottom: 36px;
+  font-family: var(--heading-font-family);
+  font-size: 80px;
+  line-height: 1;
+  color: var(--ghost-white);
+}
+
+.hero__button {
+  margin-bottom: 50px;
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
   only screen and (-o-min-device-pixel-ratio: 2/1),
